@@ -742,7 +742,8 @@ footer .footer_copy{
         font-size: 22px;
     }
   
-
+    img {
+        width: 100%;}
     .promo {
         margin-top: 30px;
     }
