@@ -1,0 +1,892 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+  outline: none;
+}
+
+
+
+
+
+
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.container_header{
+        display: flex;
+        justify-content: space-between;
+
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 3px;
+}
+.divider{
+    width: 58px;
+    height: 2px;
+    background: #F1C40F;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
+header{
+    padding: 20px 30px; 
+}
+
+header .header_flex_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header_logo img{
+    width: 60px;
+    height: 40px;
+    transition: 0.3s all;
+}
+header .header_logo img:hover{
+    transform: scale(1.1);
+}
+header .menu{
+    display: flex;
+
+}
+
+header .menu li:not(:last-child){
+    margin-right: 70px;
+}
+
+
+header .menu_link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+header .menu_link:hover{
+    color:#F1C40F;
+}
+header .menu_link:active{
+    color: #F1C47C;
+}
+.header_divider{
+    width: 100%;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+.promo{
+    margin-top: 60px;
+    min-height: 460px;
+}
+.promo .promo_img{
+    max-width: 100%;
+    height: 420px;
+    display: inline-block;
+    filter: drop-shadow(0px 15px 40px rgba(0, 0, 0, 0.25));
+}
+.promo .promo_text{
+    display: inline-block;
+    padding-left:70px;
+    padding-top: 120px;
+   
+}
+.promo .promo_text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.promo .promo_text span{
+    border: 1px solid #916c6c;
+    margin: 15px;
+    padding: 8px;
+}
+
+.promo .promo_social_network{
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.1);
+    margin-top: 30px;
+}
+
+
+.promo .promo_social_network a{
+    transition: 0.3s all;
+}
+.promo_social_network img{
+    width: 32px;
+}
+
+
+.promo .promo_social_network a:hover{
+    transform: scale(1.1);
+}
+
+.promo .promo_social_network a:not(:last-child){
+    padding-bottom: 15px;
+}
+
+
+.about_me{
+    margin-top: 150px;
+    padding: 0 80px;
+    
+}
+
+
+.about_me .about_me_cards{
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    
+}
+
+.about_me .about_me_cards .about_me_descr{
+    width: 694px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    margin-left: 75px;
+}
+
+.about_me .about_me_cards img{
+    width: 94px;
+    height: 97px;
+}
+
+
+.skills{
+    margin-top: 95px;
+}
+
+.skills .skills_cards{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 70px;
+}
+.skills .skills_cards li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 403px;
+    min-height: 298px;
+    background: #F3F3F3;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.skills .skills_cards img{
+    width: 50px;
+    height: 50px;
+
+}
+.skills .skills_cards .skills_title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 35px;
+}
+
+.skills .skills_cards .skills_subtitle{
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+
+.books{
+    margin-top: 200px;
+}
+.books_text{
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.books h3{
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #000000;
+}
+
+
+
+
+.tabs_title{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.books_title:not(:last-child){
+    margin-bottom: 10px;
+
+}
+
+.books_subtitle{
+    display: none;
+    
+}
+.books_subtitle.active{
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.tabs_title .books_title{
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.tabs_title .books_title:hover{
+    color:#F1C40F;
+}
+.tabs_title .books_title.active{
+    color:#F1C40F;
+}
+
+.books_title{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #000000;
+    
+}
+.books_subtitle{
+    font-family: 'Montserrat', sans-serif;
+    width: 500px;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 66px;
+    color: #000000;
+}
+.books_form{
+    display: flex;
+    justify-content: center;
+    
+}
+.books_form input{
+   
+    border-radius: 5px;
+    height: 50px;
+    background-color: #fff;
+    border:2px solid #C5C5C5;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 18px;
+    width: 700px;
+}
+
+.books_form button{
+    padding: 0 25px;
+    margin-left: 30px;
+    height: 50px;
+    background: #F1C40F;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    color: #000000;
+    transition: 0.3s all;
+}
+.books_form button:hover{
+    color: #ffff;
+}
+
+
+
+
+
+.contacts{
+    margin-top: 200px;
+}
+.contacts ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.contacts li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts li img{
+    width: 40px;
+    height: 40px;
+}
+
+.contacts li:not(:last-child){
+    margin-right: 240px;
+}
+.contacts p {
+    margin-left: 18px;
+    font-weight: normal;
+    font-size: 25px;
+
+    color: #000000;
+}
+.contacts_email:hover{
+    color: #F1C40F;
+}
+.contacts_email, .contacts span{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 20px;
+    color: #000000;
+    opacity: 0.5;
+    transition: 0.3s all;
+}
+
+.form_body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+.form_body input{
+    border-radius: 5px;
+    height: 50px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border:2px solid #C5C5C5;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 18px;
+}
+.form_body textarea{
+    margin-bottom: 20px;
+    border:2px solid #C5C5C5;
+    padding: 0 20px;
+    font-weight: normal;
+    font-size: 18px;
+    
+}
+.form_body button{
+    width: 100%;
+    height: 74px;
+    background: #F1C40F;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-weight: normal;
+    font-size: 25px;
+    color: #000000;
+    transition: 0.3s all;
+}
+
+.form_body button:hover{
+    color: #fff;
+}
+
+footer{
+    margin-top: 200px;
+    height: 100px;
+    background: #343434;
+    display: flex;
+    align-items: center;
+}
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_social_network{
+    display: flex;
+    align-items: center;
+    
+}
+
+.footer_social_network a{
+    transition: 0.3s all;
+}
+
+.footer_social_network a:hover{
+    transform: scale(1.1);
+}
+
+.footer_social_network a:not(:last-child){
+    margin-right: 30px;
+    
+}
+footer .footer_copy{
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color:#B7B7B7;
+    align-items: center;
+}
+
+.menu_burger{
+    display: none;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .container{
+        max-width: 970px;
+    }
+    .skills .skills_cards {
+        padding: 0 30px;
+    }
+    .skills .skills_cards li {
+        width: 50%;
+    }
+    .skills .skills_cards li:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .container{
+        max-width: 750px;
+    }
+    .skills .skills_cards {
+        padding: 0 30px;
+    }
+    .skills .skills_cards li {
+        width: 50%;
+    }
+    .skills .skills_cards li:not(:last-child) {
+        margin-right: 40px;;
+        
+}
+}
+
+@media screen and (max-width:767px){
+    .container{
+        max-width: none;
+        padding: 0 15px;
+        
+    }
+
+
+    header .menu_link {
+        color: #ffff;
+    }
+    header .menu {
+        flex-direction: column;
+        
+    }
+    header .menu li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    header .menu_link {
+        font-size: 24px;
+    }
+   
+
+    h2{
+        font-size: 35px;
+    }
+    header .header_logo img {
+        width: 70px;
+        height: 55px;
+    }
+
+    .container_header{
+        flex-direction: column;
+    }
+    .promo {
+        margin-top: 30px;
+    }
+    .promo .promo_img {
+        height: 100%
+    }
+    .promo .promo_text {
+        display: inline-block;
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .promo .promo_text p{
+        font-size: 24px;
+        line-height: 65px;
+    }
+    .promo .promo_social_network{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 57px;
+    }
+    
+    .promo_social_network img {
+        width: 45px;
+    }
+    .promo .promo_social_network a:not(:last-child) {
+        margin-right: 36px;
+    }
+    
+    
+    
+    nav{
+        display: none;
+    }
+
+
+
+    .about_me{
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+    .about_me .about_me_cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .about_me .about_me_cards .about_me_descr {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 65px;
+    }
+
+
+
+    .skills{
+        margin-top: 100px;
+    }
+    
+    .skills .skills_cards{
+        flex-direction: column;
+        padding: 0;
+    }
+    .skills .skills_cards li{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .skills .skills_cards .skills_title,.skills_subtitle {
+        font-size: 25px;
+    }
+    .skills .skills_cards .skills_subtitle {
+        font-size: 25px;
+    } 
+
+    
+
+
+    .books{
+        margin-top: 90px;
+    }
+    .books_text{
+        margin: 0;
+    }
+    .books h3{
+        font-size: 30px;
+    } 
+    .books_title {
+        font-size: 26px;
+    }
+    .books_subtitle{
+        font-size: 22px;
+        margin-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        line-height: 55px;
+    } 
+    .books_subtitle.active{
+        margin-bottom: 20px;
+    }
+    
+    
+    .books_form{
+        flex-direction: column;
+        margin-top: 45px;
+    }
+    .books_form input {
+        font-size: 25px;
+        width: 100%;
+    }
+    .books_form button{
+        margin: 20px 0 0 0;
+        font-size: 30px;
+    }
+
+
+
+
+
+    .contacts {
+        margin-top: 100px;
+    }
+
+    .contacts ul{
+        flex-direction: column;
+        margin-top: 40px;
+        
+    }
+    
+
+    .contacts li:not(:last-child) {
+        margin-right: 0;
+    }
+    .contacts p {
+        margin-left: 10px;
+        font-weight: normal;
+        font-size: 20px;
+    }
+    .contacts_email, .contacts span {
+        font-size: 22px;
+    }
+    .contacts li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+
+
+    .form_body {
+        width: 100%;
+    }
+    .form_body button {
+        font-size: 25px;
+    }
+    .form_body textarea, .form_body input {
+        font-size: 22px;
+    }
+    footer{
+        margin-top: 100px;
+    }
+    .footer_social_network img{
+        width: 35px;
+    }
+
+}
+
+
+@media screen and (max-width:479px){
+    .container{
+        max-width: none;
+        padding: 0 15px;
+        
+    }
+    h2{
+        font-size: 22px;
+    }
+  
+
+    .promo {
+        margin-top: 30px;
+    }
+    .promo .promo_text {
+        display: inline-block;
+        padding-left: 0;
+        padding-top: 40px;
+    }
+    .promo .promo_text p{
+        font-size: 15px;
+    }
+    .promo .promo_social_network{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .promo .promo_social_network a:not(:last-child) {
+        margin-right: 20px;
+    }
+    header .header_logo img {
+        width: 45px;
+        height: 35px;
+    }
+    .promo .promo_img {
+        height: 100%
+    }
+    .container_header{
+        flex-direction: column;
+    }
+    nav{
+        display: none;
+    }
+   
+
+
+
+
+
+    .about_me{
+        margin-top: 100px;
+        padding: 0 10px;
+    }
+    .about_me .about_me_cards {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .about_me .about_me_cards .about_me_descr {
+        width: 100%;
+        margin: 0;
+        margin-top: 30px;
+        font-size: 16px
+    }
+
+
+
+    .skills{
+        margin-top: 100px;
+    }
+    
+    .skills .skills_cards{
+        flex-direction: column;
+        padding: 0;
+    }
+    .skills .skills_cards li{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .skills .skills_cards .skills_title {
+        font-size: 20px;
+    }
+    .skills .skills_cards .skills_subtitle {
+        font-size: 20px;
+    } 
+
+
+
+    .books{
+        margin-top: 90px;
+    }
+    .books_text{
+        margin: 0;
+    }
+    .books h3{
+        font-size: 20px;
+    } 
+    .books_title {
+        font-size: 18px;
+    }
+    .books_subtitle{
+        font-size: 16px;
+        margin-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    } 
+    
+    
+    .books_form{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .books_form input {
+        font-size: 15px;
+        width: 100%;
+    }
+    .books_form button{
+        margin: 10px 0 0 0;
+        font-size: 20px;
+    }
+
+
+
+
+
+    .contacts {
+        margin-top: 100px;
+    }
+
+    .contacts ul{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    
+
+    .contacts li:not(:last-child) {
+        margin-right: 0;
+    }
+    .contacts p {
+        margin-left: 18px;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .contacts_email, .contacts span {
+        font-size: 15px;
+    }
+
+
+
+    .form_body {
+        width: 100%;
+    }
+    .form_body button {
+        font-size: 20px;
+    }
+    footer{
+        margin-top: 100px;
+    }
+}

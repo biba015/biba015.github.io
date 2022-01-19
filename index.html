@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header_flex_menu">
+            <a class="header_logo" href="#header"><img src="/img/icon/logo.png" alt=""></a>
+            <div class="menu_icon">
+                <span></span>
+            </div>
+            <nav>
+                <ul class="menu" id="menu">
+                    <li class="menu_item"><a href="#header" class="menu_link">Главная</a></li>
+                    <li class="menu_item"><a href="#about_me" class="menu_link">О себе</a></li>
+                    <li class="menu_item"><a href="#books" class="menu_link">Досуг</a></li>
+                    <li class="menu_item"><a href="#contacts" class="menu_link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="header_divider"></div>
+
+    <section class="promo">
+        <div class="container container_header">
+            <a href="#"><img class="promo_img" src="/img/promo.jpg" alt=""></a>
+            <div class="promo_text">
+              
+                <p>Имя: Бейбарс <br> Специальность: Frontend-developer <br>Страна: Казахстан, Алматы <br>
+                </p>
+            </div>
+            <div class="promo_social_network">
+                <a target="_blank" href="https://www.instagram.com/biba_015/"><img src="/img/icon/instagram.svg" alt=""></a>
+                <a target="_blank" href="https://www.behance.net/beibarsyerlanu"><img src="/img/icon/behance.svg" alt=""></a>
+                <a target="_blank" href="https://t.me/biba_015"><img src="/img/icon/telegram.svg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about_me" id="about_me">
+        <div class="container">
+            <h2>О себе</h2>
+            <div class="divider"></div>
+            <div class="about_me_cards">
+                <img src="/img/icon/avatar.jpg" alt="" class="about_me_ava">
+                <p class="about_me_descr">
+                    Привет! я начинающий Frontend разработчик, нахожусь в поиске работы, готов 
+                    рассматривать любые варианты взаимодействия - стажировка, проектная 
+                    работа, фриланс, удаленка, в офисе и т.д.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <ul class="skills_cards">
+                <li>
+                    <img class="skills_img" src="/img/icon/frontend.svg" alt="">
+                    <p class="skills_title">frontend</p>
+                    <p class="skills_subtitle">HTML+CSS+JS</p>
+                </li>
+                <li>
+                    <img class="skills_img" src="/img/icon/webdesign.svg" alt="">
+                    <p class="skills_title">web-design</p>
+                    <p class="skills_subtitle">FIGMA</p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="books" id="books">
+        <div class="container">
+            <h2>Книги</h2>
+            <div class="divider"></div>
+            <div class="books_text">
+                <h3>2021</h3>
+
+
+                <div class="tabs">
+  
+                    <div class="tabs_title">
+                      <div class="books_title active" data-tab="#tab1">45 татуировок менеджера</div>
+                        <div class="books_subtitle active" id="tab1">
+                        Это правила о том, как относиться к коллегам, каким образом 
+                        действовать в определенных ситуациях: свод принципов, 
+                        которым стоит следовать, если хочешь добиться успеха.
+                        </div>
+
+                      <div class="books_title" data-tab="#tab2">Тонкое искусство пофигизма</div>
+                      <div class="books_subtitle" id="tab2">
+                        Автор рассказывает, как овладеть тонким искусством
+                        пофигизма, зачем нужно быть менее уверенным в себе и что
+                         принцип «Делайте хоть что-нибудь» — отличная мотивация.
+                    </div>
+                      <div class="books_title" data-tab="#tab3">В этом году я</div>
+                      <div class="books_subtitle" id="tab3">
+                        Автор рассказывает, как перестать строить воздушные замки, 
+                        откладывать дела на потом и научиться исполнять свои желания. 
+                        Книга полезна тем кто кто хочет изменить свои привычки, начать выполнять 
+                        данные себе обещания и добиться перемен к лучшему в жизни. 
+                    </div>
+
+                      <div class="books_title" data-tab="#tab4">Сам себе финансист</div>
+                    <div class="books_subtitle" id="tab4">
+                        Цель этой книги - доказать, что любой человек, с любым уровнем доходов может 
+                        улучшить свое благосостояние, следуя простым правилам. 
+                    </div>
+
+                      <div class="books_title" data-tab="#tab5">Над пропастью во ржи </div>
+                      <div class="books_subtitle" id="tab5">
+                        Это книга для отцов, матерей и людей с ценностями заключенными в семье, 
+                            а не во всех этих великих идеях, карьерах, капиталах, и божественных откровениях. 
+                    </div>
+
+                      <div class="books_title" data-tab="#tab6">Самый богатый человек в Вавилоне</div>
+                      <div class="books_subtitle" id="tab6">
+                        Автор этой книги уверен: чтобы исполнить все свои замыслы и желания, 
+                            Вы прежде всего должы добиться успеха в денежный вопросах, используя принципы 
+                            управления личными финансами, изложенные на ее страницах. 
+                        </div>
+                    </div>  
+                  </div>
+
+
+                
+            </div>
+            <form action="/form/form-lesson/mail.php" class="books_form"  method="POST">
+                <input type="text" name="user_books" placeholder="Какие по рекомендуете и почему?">
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="divider"></div>
+            <ul>
+                <li>
+                        <img src="/img/icon/email_contacts.svg" alt="">
+                    
+                    <p>Email <br> 
+                        <a class="contacts_email" href="#">damskali98@mail.ru</a>
+                    </p>
+                </li>
+                <li>
+                    <img src="/img/icon/contacts_location.svg" alt="">
+                    <p>Адрес <br>
+                        <span>Казахстан, Алматы</span>
+                    </p>
+                </li>
+            </ul>
+
+                
+                    <form class="form_body" id="form" action="/form/form-lesson/mail.php" method="POST">
+                        
+                            <input  required id="form_name" class="form_input" name="user_name" type="text" placeholder="Ваше имя">
+                            <input required id="form_tel" class="form_input" name="user_phone" type="number" placeholder="Ваш телефон">
+                            <input required id="form_email" class="form_input" name="user_email" type="email" placeholder="Ваш E-mail">
+                            <textarea id="form_message" class="form_input" name="user_message" type="text" placeholder="Сообщение"></textarea>
+
+                            <button type="submit">Отправить сообщение</button>
+                        
+                    </form>
+                
+        </div>
+    </section>
+
+
+   
+
+    <footer>
+        <div class="container container_footer" >
+            <div class="footer_social_network">
+                <a target="_blank" href="https://www.instagram.com/biba_015/"><img src="/img/icon/footer_ins.svg" alt=""></a>
+                <a target="_blank" href="https://www.behance.net/beibarsyerlanu"><img src="/img/icon/footer_be.svg" alt=""></a>
+                <a target="_blank" href="https://t.me/biba_015"><img src="/img/icon/footer_teleg.svg" alt=""></a>
+            </div>
+            <p class="footer_copy">
+                © 2021 Yerlanuly Beibars
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="/js/app.js"></script>
+    
+</body>
+</html>
